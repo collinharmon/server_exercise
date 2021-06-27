@@ -5,25 +5,25 @@ import app from '../app.js'
 
 describe('Post Endpoints', () => {
 
-  it('should get', async () => {
+  it('gets MCA Address: 224.0.0.0', async () => {
     const res = await request(app)
       .get("/")
       expect(res.body.address).toBe("224.0.0.0")
   })
 
-  it('should get', async () => {
+  it('gets MCA Address: 224.0.0.1', async () => {
     const res = await request(app)
       .get("/")
       expect(res.body.address).toBe("224.0.0.1")
   })
 
-  it('should get', async () => {
+  it('gets MCA Address: 224.0.0.2', async () => {
     const res = await request(app)
       .get("/")
       expect(res.body.address).toBe("224.0.0.2")
   })
 
-  it('test delete', async () => {
+  it('Deletes MCA Address: 224.0.0.1', async () => {
     const res = await request(app)
       .delete("/")
       .send({
@@ -33,7 +33,7 @@ describe('Post Endpoints', () => {
   })
 
 
-  it('test delete', async () => {
+  it('Deletes MCA Address: 224.0.0.0', async () => {
     const res = await request(app)
       .delete("/")
       .send({
@@ -42,13 +42,13 @@ describe('Post Endpoints', () => {
       expect(res.statusCode).toBe(200)
   })
 
-  it('should get', async () => {
+  it('gets MCA Address: 224.0.0.0 after its release', async () => {
     const res = await request(app)
       .get("/")
       expect(res.body.address).toBe("224.0.0.0")
   })
 
-  it('should get', async () => {
+  it('gets MCA Address: 224.0.0.1 after its release', async () => {
     const res = await request(app)
       .get("/")
       expect(res.body.address).toBe("224.0.0.1")

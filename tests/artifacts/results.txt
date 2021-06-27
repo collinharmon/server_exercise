@@ -1,0 +1,18 @@
+> server_exercise@1.0.0 test C:\Users\colli\dev\server_exercise
+> cross-env NODE_ENV=test jest --testTimeout=10000
+
+ PASS  tests/routes.test.js
+  Post Endpoints
+    √ gets MCA Address: 224.0.0.0 (39 ms)
+    √ gets MCA Address: 224.0.0.1 (4 ms)
+    √ gets MCA Address: 224.0.0.2 (4 ms)
+    √ Deletes MCA Address: 224.0.0.1 (20 ms)
+    √ Deletes MCA Address: 224.0.0.0 (4 ms)
+    √ gets MCA Address: 224.0.0.0 after its release (4 ms)
+    √ gets MCA Address: 224.0.0.1 after its release (4 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       7 passed, 7 total
+Snapshots:   0 total
+Time:        1.748 s, estimated 2 s
+Ran all test suites.
